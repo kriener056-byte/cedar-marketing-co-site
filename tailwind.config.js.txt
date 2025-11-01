@@ -1,0 +1,30 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/app/**/*.{js,ts,jsx,tsx}",
+    "./src/components/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        cedar: {
+          900: "#0f1e16", // deep evergreen / near-black
+          700: "#1f3b2c", // brand green (main button / headline)
+          400: "#6fa67e", // soft growth accent
+          100: "#eef5f0", // pale background tint
+        },
+      },
+      borderRadius: {
+        pill: "9999px",
+        card: "1rem",
+      },
+      boxShadow: {
+        card: "0 24px 48px -12px rgb(0 0 0 / 0.12)",
+      },
+      maxWidth: {
+        content: "72rem",
+      },
+    },
+  },
+  plugins: [],
+};

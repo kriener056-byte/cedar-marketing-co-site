@@ -1,0 +1,16 @@
+<svg
+  width="40"
+  height="40"
+  viewBox="0 0 40 40"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <!-- background: cedar brand green -->
+  <rect x="0" y="0" width="40" height="40" rx="10" fill="#1f3b2c"/>
+
+  <!-- upward/evergreen mark (tree / growth arrow) -->
+  <path
+    d="M20 8 L28 18 H23 V28 H17 V18 H12 L20 8Z"
+    fill="#ffffff"
+  />
+</svg>
