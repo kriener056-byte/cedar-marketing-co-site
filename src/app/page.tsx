@@ -1,41 +1,50 @@
+import Image from "next/image";
+
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-white text-gray-900">
-      <section className="max-w-4xl mx-auto text-center pt-24 pb-16 px-6">
-        <p className="text-sm font-medium text-green-700 uppercase tracking-wide mb-3">
+    <main className="min-h-screen bg-white text-cedar-900">
+      <section className="flex flex-col items-center justify-center pt-24 pb-16 px-6 text-center">
+        <Image
+          src="/logo.png"
+          alt="Cedar Marketing Company logo"
+          width={320}
+          height={320}
+          className="mx-auto mb-8"
+          priority
+        />
+
+        <p className="text-sm font-medium text-cedar-700 uppercase tracking-wide mb-3">
           Rooted for Growth
         </p>
 
-        <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-          Marketing that actually grows with you, not just looks pretty.
+        <h1 className="text-4xl md:text-5xl font-bold leading-tight text-cedar-900">
+          Posters, flyers &amp; social that actually get people in the door.
         </h1>
 
-        <p className="mt-6 text-lg text-gray-600 leading-relaxed">
-          Cedar Marketing Co. builds brands, graphics, and promo assets that
-          small businesses can actually use — tonight. Posters for your band.
-          Social for your bar. Campaigns that fill the room.
+        <p className="mt-6 max-w-xl text-lg text-cedar-700 leading-relaxed">
+          Cedar Marketing Co. builds plug-and-play promo graphics for bars,
+          bands, events, and local businesses — built fast, built clean, and
+          built to perform on the wall and in the feed.
         </p>
 
-        <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="mt-10 flex flex-col sm:flx-row gap-4 justify-center">
+          {/* BUTTON 1: See our work */}
           <a
-            href="#contact"
-            className="bg-green-700 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-800 transition"
+            href="/work"
+            className="rounded-pill bg-green-700 text-white px-6 py-3 text-sm font-semibold hover:bg-green-900 transition-colors shadow-card"
           >
-            Start a Project
+            See our work
           </a>
 
+          {/* BUTTON 2: Start a project */}
           <a
-            href="#work"
-            className="border border-green-700 text-green-700 px-6 py-3 rounded-full font-semibold hover:bg-green-100 transition"
+            href="/contact"
+            className="rounded-pill border border-cedar-700/40 text-cedar-700 px-6 py-3 text-sm font-semibold hover:bg-cedar-100 transition-colors"
           >
-            See Our Work
+            Start a project
           </a>
         </div>
       </section>
-
-      <footer className="border-t border-gray-100 py-8 text-center text-sm text-gray-500">
-        © {new Date().getFullYear()} Cedar Marketing Co. — Rooted for Growth
-      </footer>
     </main>
   );
 }
