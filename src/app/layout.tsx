@@ -20,26 +20,28 @@ export default function RootLayout({
         <header className="flex flex-col sm:flex-row sm:items-center sm:justify-between py-6 border-b border-gray-200">
           {/* Brand block */}
           <Link href="/" className="flex items-start gap-3">
-            {/* Logo mark */}
-            <div className="h-10 w-10 flex-shrink-0">
-              <Image
-                src="/logo-mark.svg"
-                alt="Cedar Marketing Co. logo"
-                width={40}
-                height={40}
-                className="rounded-card shadow-card"
-              />
-            </div>
+             {/* Crisp Cedar Tree Logo */}
+    <div className="flex-shrink-0">
+      <Image
+        src="/tree-logo.png"
+        alt="Cedar Marketing Co. tree logo"
+        width={40}
+        height={40}
+        className="h-10 w-auto"
+        priority
+      />
+    </div>
 
-            <div className="flex flex-col leading-tight">
-              <span className="text-base font-semibold text-cedar-900">
-                Cedar Marketing Co.
-              </span>
-              <span className="text-[11px] uppercase tracking-wide font-medium text-cedar-400">
-                Rooted for Growth
-              </span>
-            </div>
-          </Link>
+    <div className="flex flex-col leading-tight">
+      <span className="text-base font-semibold text-cedar-900">
+        Cedar Marketing Co.
+      </span>
+      <span className="text-[11px] uppercase tracking-wide font-medium text-cedar-400">
+        Rooted for Growth
+      </span>
+    </div>
+
+  </Link>
 
           {/* Nav */}
           <nav className="flex flex-wrap gap-4 mt-4 sm:mt-0 text-sm font-medium text-cedar-900">
