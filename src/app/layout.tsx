@@ -3,6 +3,9 @@ import Image from "next/image";
 import "./globals.css";
 
 export const metadata = {
+  icons: {
+  icon: "/favicon.ico",
+},
   title: "Cedar Marketing Co. — Rooted for Growth",
   description:
     "Cedar Marketing Co. builds brand systems, event promos, and marketing assets that actually move people.",
