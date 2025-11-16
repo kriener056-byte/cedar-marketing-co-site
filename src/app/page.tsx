@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { AboutSection } from "../components/AboutSection";
+import { ServicesSection } from "../components/ServicesSection";
 
 export default function HomePage() {
   return (
@@ -43,8 +45,14 @@ export default function HomePage() {
           >
             Start a project
           </a>
-        </div>
-      </section>
-    </main>
-  );
+              </div>
+    </section>
+
+    {/* SERVICES SECTION */}
+    <ServicesSection />
+
+    {/* ABOUT SECTION */}
+    <AboutSection />
+  </main>
+);
 }
