@@ -71,17 +71,53 @@ export default function RootLayout({
         {children}
 
         {/* FOOTER */}
-        <footer className="mt-24 border-t border-gray-200 py-12 text-center text-sm text-cedar-700">
-          <div className="font-semibold text-cedar-900">
+<footer className="mt-24 bg-emerald-950 text-emerald-50">
+  <div className="border-t border-emerald-800 py-10 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
+    {/* Left: logo + tagline */}
+    <div>
+      <div className="flex items-center gap-3">
+        <Image
+          src="/tree-logo.png"
+          alt="Cedar Marketing Co. logo"
+          width={40}
+          height={40}
+          className="h-10 w-auto"
+        />
+        <div className="flex flex-col leading-tight">
+          <span className="text-sm font-semibold tracking-wide uppercase text-emerald-50">
             Cedar Marketing Co.
-          </div>
-          <div className="text-[11px] text-cedar-400 font-medium uppercase tracking-wide">
+          </span>
+          <span className="text-xs text-emerald-200">
             Rooted for Growth
-          </div>
-          <div className="mt-4 text-[11px] text-cedar-400">
-            @Cedar Marketing Co. All rights reserved.
-          </div>
-        </footer>
+          </span>
+        </div>
+      </div>
+
+      <p className="mt-4 text-xs text-emerald-300 max-w-sm">
+        Growing businesses and helping others start; locally and online.
+      </p>
+    </div>
+
+    {/* Right: nav links + copyright */}
+    <div className="flex flex-col items-start sm:items-end gap-3 text-sm">
+      <nav className="flex gap-4">
+        <Link href="/work" className="hover:text-amber-400 transition-colors">
+          Work
+        </Link>
+        <Link href="/about" className="hover:text-amber-400 transition-colors">
+          About
+        </Link>
+        <Link href="/contact" className="hover:text-amber-400 transition-colors">
+          Contact
+        </Link>
+      </nav>
+
+      <p className="text-[11px] text-emerald-300">
+        © {new Date().getFullYear()} Cedar Marketing Co. All rights reserved.
+      </p>
+    </div>
+  </div>
+</footer>
       </body>
     </html>
   );
