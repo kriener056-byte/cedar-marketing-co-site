@@ -19,11 +19,11 @@ export default function HomePage() {
           Rooted for Growth
         </p>
 
-        <h1 className="text-4xl md:text-5xl font-bold leading-tight text-cedar-900">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-slate-900 text-center leading-tight">
           Posters, flyers &amp; social that actually get people in the door.
         </h1>
 
-        <p className="mt-6 max-w-xl text-lg text-cedar-700 leading-relaxed">
+        <p className="mt-4 max-w-2xl text-base sm:text-lg md:text-2xl text-slate-700 text-center leading-relaxed mx-auto">
           Cedar Marketing Co. builds plug-and-play promo graphics for bars,
           bands, events, and local businesses — built fast, built clean, and
           built to perform on the wall and in the feed.
