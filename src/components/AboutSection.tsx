@@ -24,7 +24,7 @@ export function AboutSection() {
           solutions while partnering with clients to review performance, analyze
           trends, and map out the next steps. Those conversations taught me what
           the right strategy looks like depending on the industry, size, and
-          goals of the business — and how to adjust quickly when something
+          goals of the business and how to adjust quickly when something
           isn’t working.
         </p>
         <p className="mt-4 text-base sm:text-lg leading-relaxed text-gray-700">

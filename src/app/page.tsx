@@ -15,7 +15,7 @@ export default function HomePage() {
           priority
         />
 
-        <p className="text-sm font-medium text-cedar-700 uppercase tracking-wide mb-3">
+        <p className="text-sm font-medium text-cedar-700 uppercase tracking-wide mb-5">
           Rooted for Growth
         </p>
 
